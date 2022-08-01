@@ -912,6 +912,5 @@ After running this test class, the results in Report Portal should look somewhat
 
 ![Two invocation of test](screens/step_parameterized_individual_results.png)
 
-# Copyright Notice
-
-Licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license (see the LICENSE.md file).
+## Authors
+**ehsan khashaee** - *Core service implementation* - [adak](https://github.com/adakpro)
