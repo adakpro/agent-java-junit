@@ -1,34 +1,34 @@
-﻿# Report Portal agent for JUnit 4
+﻿# ADAKLABS agent for JUnit 4
 
 > **DISCLAIMER**: We use Google Analytics for sending anonymous usage information such as agent's and client's names, and their versions 
-> after a successful launch start. This information might help us to improve both ReportPortal backend and client sides. It is used by the
-> ReportPortal team only and is not supposed for sharing with 3rd parties.
+> after a successful launch start. This information might help us to improve both ADAKLABS backend and client sides. It is used by the
+> ADAKLABS team only and is not supposed for sharing with 3rd parties.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.epam.reportportal/agent-java-junit.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.epam.reportportal%22%20AND%20a:%22agent-java-junit%22)
-[![CI Build](https://github.com/reportportal/agent-java-junit/actions/workflows/ci.yml/badge.svg)](https://github.com/reportportal/agent-java-junit/actions/workflows/ci.yml)
-[![Join Slack chat!](https://reportportal-slack-auto.herokuapp.com/badge.svg)](https://reportportal-slack-auto.herokuapp.com)
-[![stackoverflow](https://img.shields.io/badge/reportportal-stackoverflow-orange.svg?style=flat)](http://stackoverflow.com/questions/tagged/reportportal)
-[![Build with Love](https://img.shields.io/badge/build%20with-❤%EF%B8%8F%E2%80%8D-lightgrey.svg)](http://reportportal.io?style=flat)
+[![Maven Central](https://img.shields.io/maven-central/v/com.epam.ADAKLABS/agent-java-junit.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.epam.ADAKLABS%22%20AND%20a:%22agent-java-junit%22)
+[![CI Build](https://github.com/ADAKLABS/agent-java-junit/actions/workflows/ci.yml/badge.svg)](https://github.com/ADAKLABS/agent-java-junit/actions/workflows/ci.yml)
+[![Join Slack chat!](https://ADAKLABS-slack-auto.herokuapp.com/badge.svg)](https://ADAKLABS-slack-auto.herokuapp.com)
+[![stackoverflow](https://img.shields.io/badge/ADAKLABS-stackoverflow-orange.svg?style=flat)](http://stackoverflow.com/questions/tagged/ADAKLABS)
+[![Build with Love](https://img.shields.io/badge/build%20with-❤%EF%B8%8F%E2%80%8D-lightgrey.svg)](http://ADAKLABS.io?style=flat)
 
-### Overview: How to Add ReportPortal Logging to Your JUnit Java Project
+### Overview: How to Add ADAKLABS Logging to Your JUnit Java Project
 Report Portal supports JUnit 4 tests. The integration is built on top of [JUnit Foundation](https://github.com/sbabcoc/JUnit-Foundation) framework by [Scott Babcock](https://github.com/sbabcoc).
 
-1. [Configuration](#configuration): Create/update the **_reportportal.properties_** configuration file
+1. [Configuration](#configuration): Create/update the **_ADAKLABS.properties_** configuration file
 2. [Logback Framework](#logback-framework): For the Logback framework:  
    a. Create/update the **_logback.xml_** file  
-   b. Add ReportPortal / Logback dependencies to your project POM
+   b. Add ADAKLABS / Logback dependencies to your project POM
 3. [Log4J Framework](#log4j-framework): For the Log4J framework:  
-   a. Add ReportPortal / Log4J dependencies to your project POM
+   a. Add ADAKLABS / Log4J dependencies to your project POM
 4. [Support for Parameterized Tests](#support-for-parameterized-tests): Reporting of test parameters
 5. [Images and Files](#images-and-files): Logging images and files
-6. [Step by step instruction](#reportportal-integration-with-junit-4): Report Portal and JUnit4 integration example
+6. [Step by step instruction](#ADAKLABS-integration-with-junit-4): Report Portal and JUnit4 integration example
 
 ### Configuration
 
-#### Create/update the reportportal.properties configuration file:
-Create or update a file named reportportal.properties in your Java project in source folder src/main/resources:
+#### Create/update the ADAKLABS.properties configuration file:
+Create or update a file named ADAKLABS.properties in your Java project in source folder src/main/resources:
 
-`reportportal.properties`
+`ADAKLABS.properties`
 ```
 rp.endpoint = http://localhost:8080
 rp.uuid = e0e541d8-b1cd-426a-ae18-b771173c545a
@@ -45,7 +45,7 @@ rp.project = default_personal
 
 #### Create/update the logback.xml file:
 
-In your project, create or update a file named logback.xml in the src/main/resources folder, adding the ReportPortal elements:
+In your project, create or update a file named logback.xml in the src/main/resources folder, adding the ADAKLABS elements:
 
 `logback.xml`
 ```xml
@@ -80,7 +80,7 @@ In your project, create or update a file named logback.xml in the src/main/resou
 </configuration>
 ```
 
-#### Add ReportPortal / Logback dependencies to your project POM:
+#### Add ADAKLABS / Logback dependencies to your project POM:
 
 `pom.xml`
 ```xml
@@ -169,7 +169,7 @@ In your project, create or update a file named logback.xml in the src/main/resou
 
 ### Log4J Framework
 
-#### Add ReportPortal / Log4J dependencies to your project POM:
+#### Add ADAKLABS / Log4J dependencies to your project POM:
 
 `pom.xml`
 ```xml
@@ -267,7 +267,7 @@ apply plugin: 'java'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-description = 'ReportPortal JUnit 4 example'
+description = 'ADAKLABS JUnit 4 example'
 
 repositories {
     mavenLocal()
@@ -362,15 +362,15 @@ When sending reports for tests in parameterized classes like this, the JUnit age
 
 ### Images and Files
 
-http://reportportal.io/docs/Logging-Integration%3Elog-message-format
+http://ADAKLABS.io/docs/Logging-Integration%3Elog-message-format
 
-In addition to text log messages, ReportPortal has the ability to record images and file contents. The link above documents the formats supported by the report portal test listener for representing these artifacts.
+In addition to text log messages, ADAKLABS has the ability to record images and file contents. The link above documents the formats supported by the report portal test listener for representing these artifacts.
 
-### ReportPortal integration with JUnit 4
+### ADAKLABS integration with JUnit 4
 
 This manual will walk you through the steps for integration of Report Portal with JUnit4 based project
 
-First, make sure you have installed Report Portal, the installation steps could be found [here](http://reportportal.io/docs/Installation-steps)
+First, make sure you have installed Report Portal, the installation steps could be found [here](http://ADAKLABS.io/docs/Installation-steps)
 
 We’ll assume that Report Portal is installed and running on <http://localhost:8080>
 
@@ -898,7 +898,7 @@ public class MyParameterizedTests implements ArtifactParams {
 }
 ```
 
-`AtomIdentity` and `ArtifactParams` are classes from `junit-foundation` that should be used to link parameterized test with ReportPortal
+`AtomIdentity` and `ArtifactParams` are classes from `junit-foundation` that should be used to link parameterized test with ADAKLABS
 
 In this example we have 2 items in the Object array returned by `data()` method, this means that the test `simpleParameterizedTest` will be executed twice with different parameters
 
