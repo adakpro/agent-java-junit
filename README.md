@@ -28,7 +28,7 @@ Report Portal supports JUnit 4 tests. The integration is built on top of [JUnit 
 #### Create/update the ADAKLABS.properties configuration file:
 Create or update a file named ADAKLABS.properties in your Java project in source folder src/main/resources:
 
-`ADAKLABS.properties`
+`adaklabs.properties`
 ```
 rp.endpoint = http://localhost:8080
 rp.uuid = e0e541d8-b1cd-426a-ae18-b771173c545a
